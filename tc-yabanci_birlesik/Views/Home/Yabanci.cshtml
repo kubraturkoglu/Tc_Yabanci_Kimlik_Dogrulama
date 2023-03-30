@@ -1,0 +1,46 @@
+﻿
+<div class="container" style="margin-top:100px">
+
+
+    <form action="/Home/Yabanci" method="post">
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+        <div class="form-group">
+            <label for="tcno">Tc No:</label>
+            <input type="text" class="form-control" id="tcno" placeholder="Tc No" name="tcno">
+        </div>
+
+        <div class="form-group">
+            <label for="isim">Ad:</label>
+            <input type="text" class="form-control" id="isim" placeholder="Ad" name="isim">
+        </div>
+
+        <div class="form-group">
+            <label for="soyad">Soyad:</label>
+            <input type="text" class="form-control" id="soyad" placeholder="Soyad" name="soyad">
+        </div>
+
+        <div class="form-group">
+            <label for="dogumgun">Doğum Günü:</label>
+            <input type="text" class="form-control" id="dogumgun" placeholder="Doğum Günü" name="dogumgun">
+        </div>
+        <div class="form-group">
+            <label for="dogumay">Doğum Ayı:</label>
+            <input type="text" class="form-control" id="dogumay" placeholder="Doğum Ay" name="dogumay">
+        </div>
+
+        <div class="form-group">
+            <label for="dogumyil">Doğum Yılı:</label>
+            <input type="text" class="form-control" id="dogumyil" placeholder="Doğum Yılı" name="dogumyil">
+        </div>
+
+        <button type="submit" class="btn btn-primary">Doğrula</button>
+
+        <button type="button" class="btn btn-danger" onclick="location.href = '@Url.Action("Index","Home")'"> Geri </button>
+
+
+
+    </form>
+</div>
+
+
